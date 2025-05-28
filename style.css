@@ -7,7 +7,7 @@
 
 body{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: #fff url(../imagens/fundo.png) repeat-x;
+	background: #fff url(imagens/fundo.png) repeat-x;
 }
 
 #container {
@@ -17,7 +17,7 @@ body{
 
 #topo {
 	height: 150px;
-	background: url(../imagens/detalhe-topo.png) no-repeat right top;
+	background: url(imagens/detalhe-topo.png) no-repeat right top;
 	padding-top: 25px;
 	/*border: 1px solid red;*/
 }
@@ -25,7 +25,7 @@ body{
 .logo {
 	width: 152px;
 	height: 66px;
-	background: url(../imagens/logo.png) no-repeat center;
+	background: url(imagens/logo.png) no-repeat center;
 	text-indent: -3000px;
 }
 
@@ -63,7 +63,7 @@ ul {
 	line-height: 2.1em;
 	text-decoration: none;
 	color: #fff;
-	background: url(../imagens/divisor.png) no-repeat left center;
+	background: url(imagens/divisor.png) no-repeat left center;
 }
 
 #topo ul .primeiro a {
@@ -121,7 +121,7 @@ body.fotos #navegacao a#fotos
 .caixa {
 	margin: 10px 0;
 	padding: 5px;
-	background: #f3f3f3 url(../imagens/fundo-caixa.png);
+	background: #f3f3f3 url(imagens/fundo-caixa.png);
 }
 
 h2 {
@@ -150,7 +150,7 @@ h2 {
 }
 
 #lateral ul a:hover {
-	background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+	background: #f9f9f9 url(imagens/marcador.png) no-repeat left center;
 	padding-left: 20px;
 	color: #a1a1a1;
 }
@@ -244,6 +244,88 @@ h3 {
 	color: #fff;
 }
 
+/* Responsividade geral */
+@media (max-width: 768px) {
+  #container, #rodape {
+    width: 90%;
+  }
+
+  #topo {
+    height: auto;
+    padding: 20px 0;
+    background-position: center top;
+    text-align: center;
+  }
+
+  #topo ul {
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #topo ul li {
+    float: none;
+  }
+
+  #conteudo {
+    margin-top: 30px;
+  }
+
+  #lateral, #secundario {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+
+  #primario {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+
+  img.imagem-principal {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #topo ul a {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  input.submit {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  #lista-noticias li {
+    height: auto;
+  }
+
+  #lista-noticias li a img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #lista-noticias li a h3,
+  #lista-noticias li a p {
+    text-align: center;
+  }
+}
 
 
 
